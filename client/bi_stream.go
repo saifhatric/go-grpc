@@ -9,7 +9,7 @@ import (
 	pb "github.com/saif404/go-grpc/proto"
 )
 func CallSayHelloBiDirectional(client pb.GreetServiceClient,names *pb.NamesList){
-	log.Fatal("Bi_Directional Streaming started!")
+	log.Printf("Bi_Directional Streaming started!")
 	stream,err:= client.SayHelloBiDirectional(context.Background())
 	if err!=nil{
 		log.Fatalf("could not send names to the server %v",err)

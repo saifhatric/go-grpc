@@ -25,8 +25,8 @@ func main(){
 	}
 	//CallSayHello(client)
 	//CallSayHelloServer(client,names)
-	//CallSayHelloClient(client,names)
-	CallSayHelloBiDirectional(client,names)
+	CallSayHelloClient(client,names)
+	//CallSayHelloBiDirectional(client,names)
 }
 
 
